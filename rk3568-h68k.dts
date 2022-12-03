@@ -239,8 +239,6 @@
 };
 
 &gpu {
-	/delete-property/ upthreshold;
-	/delete-property/ downdifferential;
 	clock-names = "gpu", "bus";
 	interrupt-names = "gpu", "mmu", "job";
 	mali-supply = <&vdd_gpu>;
