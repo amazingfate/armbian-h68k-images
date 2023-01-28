@@ -31,7 +31,7 @@ jobs:
     needs: prepare_release
     strategy:
       matrix:
-        BOARD: [h68k]
+        BOARD: [h66k, h68k]
         DISTRO: [armbian]
         FLAVOR: [ubuntu]
         BRANCH: [legacy]
