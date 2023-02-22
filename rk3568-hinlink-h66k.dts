@@ -6,7 +6,7 @@
 
 /dts-v1/;
 
-#include "rk3568-h6xk.dtsi"
+#include "rk3568-hinlink-h6xk.dtsi"
 
 / {
 	model = "HINLINK H66K";

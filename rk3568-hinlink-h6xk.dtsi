@@ -14,11 +14,6 @@
 #include "rk3568.dtsi"
 
 / {
-	aliases {
-		mmc0 = &sdmmc0;
-		mmc1 = &sdhci;
-	};
-
 	cspmu: cspmu@fd90c000 {
 		compatible = "rockchip,cspmu";
 		reg = <0x0 0xfd90c000 0x0 0x1000>,
@@ -141,7 +136,7 @@
 &bus_npu {
 	bus-supply = <&vdd_logic>;
 	pvtm-supply = <&vdd_cpu>;
-	status = "disabled";
+	status = "okay";
 };
 
 &combphy0_us {
@@ -780,11 +775,11 @@
 &rknpu {
 	memory-region = <&rknpu_reserved>;
 	rknpu-supply = <&vdd_npu>;
-	status = "disabled";
+	status = "okay";
 };
 
 &rknpu_mmu {
-	status = "disabled";
+	status = "okay";
 };
 
 &rk_rga {
