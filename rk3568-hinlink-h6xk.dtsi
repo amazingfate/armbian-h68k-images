@@ -823,8 +823,7 @@
 
 &sdhci {
 	bus-width = <8>;
-	no-sdio;
-	no-sd;
+	supports-emmc;
 	non-removable;
 	max-frequency = <200000000>;
 	status = "okay";
