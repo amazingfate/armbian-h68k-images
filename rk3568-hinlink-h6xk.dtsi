@@ -821,6 +821,10 @@
 	vref-supply = <&vcca_1v8>;
 };
 
+&sata0 {
+	status = "okay";
+};
+
 &sdhci {
 	bus-width = <8>;
 	non-removable;
@@ -894,6 +898,7 @@
 &usbdrd_dwc3 {
 	dr_mode = "otg";
 	extcon = <&usb2phy0>;
+	phys = <&u2phy0_otg>;
 	status = "okay";
 };
 
