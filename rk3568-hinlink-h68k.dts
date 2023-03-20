@@ -85,3 +85,7 @@
 		reg = <0x0>;
 	};
 };
+
+&vcc3v3_pcie {
+	gpio = <&gpio2 RK_PD2 GPIO_ACTIVE_HIGH>;
+};
