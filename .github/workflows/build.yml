@@ -33,7 +33,7 @@ jobs:
       matrix:
         BOARD: [hinlink-h66k, hinlink-h68k]
         DISTRO: [armbian]
-        FLAVOR: [ubuntu]
+        FLAVOR: [ubuntu, cli]
         BRANCH: [legacy]
     steps:
       - name: Checkout
